@@ -1,0 +1,33 @@
+{
+	"name": "snow",
+	"tree": {
+		"$className": "DataModel",
+
+		"ReplicatedStorage": {
+			"Snow": {
+				"$path": "src/shared/Snow"
+			},
+			"Hitbox": {
+				"$path": "src/shared/Hitbox.rbxm"
+			}
+		},
+
+		"StarterPlayer": {
+			"StarterPlayerScripts": {
+				"SnowDriver": {
+					"$path": "src/client/SnowDriver.client.luau",
+					"$attributes": {
+						"CellsPerTick": 0.5,
+						"TicksPerSecond": 30
+					}
+				}
+			}
+		},
+
+		"ServerScriptService": {
+			"SnowHitboxSetup": {
+				"$path": "src/server/SnowHitboxSetup.server.luau"
+			}
+		}
+	}
+}
